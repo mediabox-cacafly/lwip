@@ -1,20 +1,20 @@
 # Light-weight image processor for NodeJS
 
-[![npm versions](https://img.shields.io/npm/v/@randy.tarampi/lwip.svg?style=flat-square)](https://www.npmjs.org/package/@randy.tarampi/lwip)
-[![npm downloads](https://img.shields.io/npm/dt/@randy.tarampi/lwip.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/lwip)
-[![npm license](https://img.shields.io/npm/l/@randy.tarampi/lwip.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/lwip)
-[![Build status](https://img.shields.io/travis/com/randytarampi/lwip.svg?style=flat-square)](https://travis-ci.com/randytarampi/lwip)
-[![Build status](https://ci.appveyor.com/api/projects/status/46mk5218x995svhw/branch/master?svg=true&style=flat-square)](https://ci.appveyor.com/project/randytarampi/lwip/branch/master)
-[![Coverage status](https://img.shields.io/coveralls/randytarampi/lwip.svg?style=flat-square)](https://coveralls.io/github/randytarampi/lwip?branch=master)
-[![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/lwip.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/lwip/maintainability)
-[![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/lwip/?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
+[![npm versions](https://img.shields.io/npm/v/@mediabox/lwip.svg?style=flat-square)](https://www.npmjs.org/package/@mediabox/lwip)
+[![npm downloads](https://img.shields.io/npm/dt/@mediabox/lwip.svg?style=flat-square)](https://www.npmjs.com/package/@mediabox/lwip)
+[![npm license](https://img.shields.io/npm/l/@mediabox/lwip.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@mediabox/lwip)
+[![Build status](https://img.shields.io/travis/com/mediabox/lwip.svg?style=flat-square)](https://travis-ci.com/mediabox/lwip)
+[![Build status](https://ci.appveyor.com/api/projects/status/46mk5218x995svhw/branch/master?svg=true&style=flat-square)](https://ci.appveyor.com/project/mediabox/lwip/branch/master)
+[![Coverage status](https://img.shields.io/coveralls/mediabox/lwip.svg?style=flat-square)](https://coveralls.io/github/mediabox/lwip?branch=master)
+[![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/mediabox/lwip.svg?style=flat-square)](https://codeclimate.com/github/mediabox/lwip/maintainability)
+[![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/mediabox-cacafly/lwip/?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
 [![Join the chat at https://gitter.im/EyalAr/lwip](https://img.shields.io/gitter/room/EyalAr/lwip.svg?style=flat-square)](https://gitter.im/EyalAr/lwip?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frandytarampi%2Flwip.svg)](https://app.fossa.com/projects/git%2Bgithub.com%2Frandytarampi%2Flwip?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%mediabox-cacafly%2Flwip.svg)](https://app.fossa.com/projects/git%2Bgithub.com%mediabox-cacafly%2Flwip?ref=badge_shield)
 
-[![Install @randy.tarampi/lwip](https://nodeico.herokuapp.com/@randy.tarampi/lwip.svg)](https://www.npmjs.com/package/@randy.tarampi/lwip)
+[![Install @mediabox/lwip](https://nodeico.herokuapp.com/@mediabox-cacafly/lwip.svg)](https://www.npmjs.com/package/@mediabox/lwip)
 
 
-This is a branch based off of [@kant2002/lwip](https://www.npmjs.com/package/@kant2002/lwip) and [@mcph/lwip](https://www.npmjs.com/package/@mcph/lwip), customized for my own use.
+This is a branch based off of [@randy.tarampi/lwip](https://www.npmjs.com/package/@randy.tarampi/lwip) , customized for my own use.
 
 0. [Overview](#overview)
   0. [Installation](#installation)
@@ -78,15 +78,15 @@ install anything else on your system.
 ### Installation
 
 ```bash
-npm install @randy.tarampi/lwip
+npm install @mediabox/lwip
 ```
 
-Or, clone this repo and `cd @randy.tarampi/lwip && npm install`.
+Or, clone this repo and `cd @mediabox/lwip && npm install`.
 
 You can run tests with `npm test`.
 
 ##### NOTE: Installation of this module involves compiling native code
-If `npm install @randy.tarampi/lwip` fails, you probably need to setup your system.
+If `npm install @mediabox/lwip` fails, you probably need to setup your system.
 
 See the [instructions for `node-gyp`](https://github.com/TooTallNate/node-gyp#installation).
 
@@ -104,7 +104,7 @@ Building on Windows with Visual Studio requires version 2013 or higher.
 
 ```Javascript
 // obtain an image object:
-require('@randy.tarampi/lwip').open('image.jpg', function(err, image){
+require('@mediabox/lwip').open('image.jpg', function(err, image){
 
   // check err...
   // define a batch of manipulations and save to disk as JPEG:
@@ -124,7 +124,7 @@ require('@randy.tarampi/lwip').open('image.jpg', function(err, image){
 **Example (non-batch):**
 
 ```Javascript
-var lwip = require('@randy.tarampi/lwip');
+var lwip = require('@mediabox/lwip');
 
 // obtain an image object:
 lwip.open('image.jpg', function(err, image){
@@ -268,7 +268,7 @@ Red values, then all the Green values, etc.
 #### Open file example
 
 ```Javascript
-const lwip = require('@randy.tarampi/lwip');
+const lwip = require('@mediabox/lwip');
 lwip.open('path/to/image.jpg', function(err, image){
     // check 'err'. use 'image'.
     // image.resize(...), etc.
@@ -279,7 +279,7 @@ lwip.open('path/to/image.jpg', function(err, image){
 
 ```Javascript
 const fs = require('fs'),
-    lwip = require('@randy.tarampi/lwip');
+    lwip = require('@mediabox/lwip');
 
 fs.readFile('path/to/image.png', function(err, buffer){
   // check err
@@ -304,7 +304,7 @@ fs.readFile('path/to/image.png', function(err, buffer){
 **Example**:
 
 ```Javascript
-const lwip = require('@randy.tarampi/lwip');
+const lwip = require('@mediabox/lwip');
 
 lwip.create(500, 500, 'yellow', function(err, image){
   // check err
@@ -860,20 +860,20 @@ The native part of this module is compiled from source which uses either your na
 
 - Independent JPEG Group's free JPEG software:
   - [Website](http://www.ijg.org/)
-  - [Readme](https://github.com/randytarampi/lwip/blob/master/src/lib/jpeg/README)
+  - [Readme](https://github.com/mediabox-cacafly/lwip/blob/master/src/lib/jpeg/README)
 - `libpng`:
   - [Website](http://www.libpng.org/)
-  - [Readme](https://github.com/randytarampi/lwip/blob/master/src/lib/png/README)
+  - [Readme](https://github.com/mediabox-cacafly/lwip/blob/master/src/lib/png/README)
 - `zlib`:
   - [Website](http://www.zlib.net/)
-  - [Readme](https://github.com/randytarampi/lwip/blob/master/src/lib/zlib/README)
+  - [Readme](https://github.com/mediabox-cacafly/lwip/blob/master/src/lib/zlib/README)
 - The CImg Library
   - [Website](http://cimg.sourceforge.net/)
-  - [Readme](https://github.com/randytarampi/lwip/blob/master/src/lib/cimg/README.txt)
+  - [Readme](https://github.com/mediabox-cacafly/lwip/blob/master/src/lib/cimg/README.txt)
 - `giflib`
   - [Website](http://giflib.sourceforge.net/)
-  - [Readme](https://github.com/randytarampi/lwip/blob/master/src/lib/gif/README)
+  - [Readme](https://github.com/mediabox-cacafly/lwip/blob/master/src/lib/gif/README)
 
 
 ## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frandytarampi%2Flwip.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frandytarampi%2Flwip?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%mediabox-cacafly%2Flwip.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%mediabox-cacafly%2Flwip?ref=badge_large)

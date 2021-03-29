@@ -1,13 +1,13 @@
 {
-  "name": "@randy.tarampi/lwip",
+  "name": "@mediabox/lwip",
   "description": "Comprehensive, fast, and simple image processing and manipulation",
   "version": "3.0.17",
   "author": {
-    "name": "Randy Tarampi",
-    "email": "rt@randytarampi.ca",
-    "url": "https://www.randytarampi.ca"
+    "name": "Media Box",
+    "email": "mediabox@cacafly.com",
+    "url": "https://www.cacafly.com"
   },
-  "bugs": "https://github.com/randytarampi/lwip/issues",
+  "bugs": "https://github.com/mediabox-cacafly/lwip/issues",
   "dependencies": {
     "async": "^3.2.0",
     "bindings": "^1.5.0",
@@ -39,7 +39,7 @@
     "node": ">=10"
   },
   "gypfile": true,
-  "homepage": "https://github.com/randytarampi/lwip",
+  "homepage": "https://github.com/mediabox-cacafly/lwip",
   "keywords": [
     "alpha",
     "batch",
@@ -75,7 +75,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "randytarampi/lwip.git",
+  "repository": "mediabox-cacafly/lwip.git",
   "scripts": {
     "cover": "npm run cover:actual",
     "cover:actual": "nyc mocha --config ./tests/.mocharc.js tests",
